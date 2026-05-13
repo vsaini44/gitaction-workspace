@@ -3,7 +3,7 @@ name: my first workflow in action
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
