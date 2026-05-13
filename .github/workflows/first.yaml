@@ -16,5 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: step2
-        run : echo "my step2 execution"
+        run : | 
+              echo "my step2 execution"
+              hostname
+              date
  
