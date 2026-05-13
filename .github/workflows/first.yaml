@@ -20,4 +20,13 @@ jobs:
               echo "my step2 execution"
               hostname
               date
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: show predefined variables
+        run: | 
+             echo "my repo: $GITHUB_REPOSITORY"
+             echo "branch: $GITHUB_REF"
+             echo "triggered by: $GITHUB_ACTOR"
+             echo "my city:  $city"
  
