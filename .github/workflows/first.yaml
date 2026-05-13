@@ -28,5 +28,5 @@ jobs:
              echo "my repo: $GITHUB_REPOSITORY"
              echo "branch: $GITHUB_REF"
              echo "triggered by: $GITHUB_ACTOR"
-             echo "my city:  $city"
+             echo "my city:  $CITY"
  
