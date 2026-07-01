@@ -15,13 +15,14 @@ jobs:
           path: vishal.txt
 
   test:
+    needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: step2
-        run : | 
-              echo "my step2 execution"
-              hostname
-              date
+      - uses: actions/download-artifact@v4
+        with: myfile1
+        
+      - run : cat vishal.txt
+      
   job3:
     runs-on: ubuntu-latest
     steps:
