@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: step1 
         run: echo "welcome to job1" > vishal.txt
-      - uses: actions/upload-artifacts@v4
+      - uses: actions/upload-artifact@v4
         with:
           name: myfile1
           path: vishal.txt
